@@ -1,0 +1,46 @@
+{#<!-- feedback.html -->#}
+<!-- feedback.html -->
+
+{% extends 'main/base.html' %}
+
+{#{% block content %}#}
+{% load static %}
+{#<h2>Reader Feedback</h2>#}
+<form method="post" action="{% url 'feedback' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" value="Submit" >Submit Feedback</button>
+</form>
+
+{#<div class="feedback-form">#}
+{#    <h2>Reader Feedback</h2>#}
+{#    <form method="post" action="{% url 'feedback' %}">#}
+{#        {% csrf_token %}#}
+{#        {{ form.as_p }}#}
+{#        <button type="submit">Submit Feedback</button>#}
+{#    </form>#}
+{#</div>#}
+
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <meta name="viewport" content="width=device-width, initial-scale=1.0">#}
+{#    <title>Feedback</title>#}
+{#    <!-- Include any additional styles or scripts if needed -->#}
+{#</head>#}
+{#<body>#}
+{##}
+{#    <h2>Reader Feedback</h2>#}
+{##}
+{#    <form method="post" action="{% url 'feedback' %}">#}
+{#        {% csrf_token %}#}
+{#        {{ form.as_p }}#}
+{##}
+{#        <button type="submit">Submit Feedback</button>#}
+{#    </form>#}
+{##}
+{#    <!-- Include any additional content or styling as needed -->#}
+{##}
+{#</body>#}
+{#</html>#}

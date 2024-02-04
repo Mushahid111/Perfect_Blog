@@ -1,0 +1,91 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <h1 class="edica-page-title" data-aos="fade-up">About Us</h1>
+
+        <section class="about-section">
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h2>Our Story</h2>
+                    <p>At Blog Villa , we celebrate the power of diverse voices and unique perspectives. Our journey isn't just ours; it's shared with a community of talented bloggers who contribute their thoughts, insights, and stories.</p>
+                    <br>
+                    <p>If you're a passionate storyteller, a subject matter expert, or someone with a unique perspective to share, we invite you to join our blogging community. Becoming a contributor is simple</p>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-left">
+                    <h2>Our Mission</h2>
+                    <p>Nulla facilisi. Phasellus eu justo et ante dapibus varius. Mauris sed sagittis dui.
+                        Nullam ac tincidunt ex. Sed convallis, dui a bibendum suscipit, purus erat
+                        ullamcorper dolor.</p>
+                </div>
+            </div>
+        </section>
+
+
+{#        <section class="team-section">#}
+{#            <h2>Meet Our Team</h2>#}
+{#            <div class="row">#}
+{#                <div class="col-md-4" data-aos="fade-up">#}
+{#        /            <img src="{{ block.super }} 'images/blog_1.jpg' alt="Team Member 1">#}
+{#                    <img src="{% static 'images/blog_1.jpg' %}" alt="Team Member 1">#}
+{#                    <h3>John Doe</h3>#}
+{#                    <p>Co-founder</p>#}
+{#                </div>#}
+{##}
+{#                <div class="col-md-4" data-aos="fade-up">#}
+{#                    <img src="{% static 'images/oval-copy-3.png' %}" alt="Team Member 2">#}
+{#                    <h3>Jane Doe</h3>#}
+{#                    <p>Lead Developer</p>#}
+{#                </div>#}
+{##}
+{#                <div class="col-md-4" data-aos="fade-up">#}
+{#                    <img src="{% static 'images/oval-copy-4.png' %}" alt="Team Member 3">#}
+{#                    <h3>David Smith</h3>#}
+{#                    <p>Designer</p>#}
+{#                </div>#}
+{#            </div>#}
+{#        </section>#}
+    <section class="team-section">
+    <h2 class="text-center mb-5">Meet Our Team</h2>
+    <div class="row">
+        <div class="col-md-4" data-aos="fade-up">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Team Member 1"/>
+                <div class="card-body text-center">
+                    <h3 class="card-title">John Doe</h3>
+                    <p class="card-text">Co-founder</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1590086782957-93c06ef21604?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Team Member 2"/>
+                <div class="card-body text-center">
+                    <h3 class="card-title">Jane Doe</h3>
+                    <p class="card-text">Lead Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Team Member 3"/>
+                <div class="card-body text-center">
+                    <h3 class="card-title">David Smith</h3>
+                    <p class="card-text">Designer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+
+
+{% endblock %}
