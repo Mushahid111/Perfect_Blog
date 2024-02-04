@@ -1,9 +1,40 @@
 # .gitignore
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.db
-*.sqlite3
-.env
+
+# Database files
+db.sqlite3
+
+# Virtual environment
 venv/
+
+# Local development settings
+myproject/settings_local.py
+
+# Media files
+media/
+
+# Static files
+staticfiles/
+
+# Secret keys and sensitive information
+secret_keys.txt
+api_keys.txt
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+
+# Logs and temporary files
+*.log
+*.pot
+*.pyc
+*.swp
